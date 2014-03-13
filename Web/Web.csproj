@@ -57,12 +57,58 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\common\arrow-down.png" />
+    <Content Include="index.html" />
+    <Content Include="js\site.js" />
+    <Content Include="js\wel-forms.js" />
+    <Content Include="styles\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="styles\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\import.css">
+      <DependentUpon>import.less</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\import.min.css">
+      <DependentUpon>import.css</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\mixins.css">
+      <DependentUpon>mixins.less</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\mixins.min.css">
+      <DependentUpon>mixins.css</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\settings.css">
+      <DependentUpon>settings.less</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\settings.min.css">
+      <DependentUpon>settings.css</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\standard-select.css">
+      <DependentUpon>standard-select.less</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\standard-select.min.css">
+      <DependentUpon>standard-select.css</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\wel-forms.css">
+      <DependentUpon>wel-forms.less</DependentUpon>
+    </Content>
+    <Content Include="styles\wel-forms\wel-forms.min.css">
+      <DependentUpon>wel-forms.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="styles\wel-forms\wel-forms.less" />
+    <Content Include="styles\wel-forms\settings.less" />
+    <Content Include="styles\wel-forms\mixins.less" />
+    <Content Include="styles\wel-forms\standard-select.less" />
+    <Content Include="styles\wel-forms\import.less" />
+    <Content Include="styles\site.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -70,6 +116,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

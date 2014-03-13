@@ -1,0 +1,74 @@
+﻿@import "settings.less";
+@import "mixins.less";
+
+.standard-select{
+    
+    width: 250px;
+    position: relative;    
+    
+}
+
+.standard-select span{
+    display: block;
+    padding: @dim-input-padding;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid @clr-border;
+    cursor: pointer;
+
+    &:after{
+        content: " ";
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background: url('/img/common/arrow-down.png') no-repeat;
+        display: block;
+    }
+}
+
+.standard-select input[type="text"]{
+    display: none;
+}
+
+.standard-select ul{
+    display: none;
+    border: 1px solid @clr-border;
+    border-top: 0px;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    z-index: 999;
+
+    &.show{
+        display: block;
+    }
+}
+
+.standard-select ul li{
+    
+    padding: @dim-input-padding;    
+
+    &:hover{
+        background-color: #eee;
+    }
+}
+
+@media(max-width: 600px){
+    .standard-select ul{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        border: none;
+        border-top: 1px solid @clr-border;
+        max-height: 50%;
+        overflow-y: scroll;
+    }
+
+    .standard-select ul li{
+        padding: @dim-input-padding;                            
+    }
+}
