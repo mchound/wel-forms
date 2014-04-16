@@ -7,6 +7,8 @@
     defaults = {
         selector: '.wel-zoom',
         zoomWindowWidth: 0.4,
+        zoomWindowScale: 1,
+        zoomWindowDimension: 'natural',
         loadingText: 'Laddar bild'
     },
 
@@ -50,6 +52,9 @@
 
         event(variables.image, 'load', function () {
             elements.loader.style.display = 'none';
+            variables.imageInfo.width = variables.image.width * settings.zoomWindowScale;
+            variables.imageInfo.height = variables.image.height * settings.zoomWindowScale;
+            variables.imageInfo.widthHeightRatio = variables.imageInfo.width / variables.imageInfo.height;
             setUpElements();
             setUpEvents();
             initZoomContainer();
@@ -95,6 +100,8 @@
         elements.fullScaleImage.src = variables.image.src;
         elements.fullScaleImage.removeAttribute('width');
         elements.fullScaleImage.removeAttribute('height');
+        elements.fullScaleImage.style.width = variables.imageInfo.width + 'px';
+        elements.fullScaleImage.style.height = variables.imageInfo.height + 'px';
 
         elements.zoomContainer.appendChild(elements.fullScaleImage);
         elements.container.appendChild(elements.scaledImage);
@@ -121,13 +128,15 @@
 
     initZoomContainer = function () {
 
-        variables.imageInfo.width = variables.image.width;
-        variables.imageInfo.height = variables.image.height;
-        variables.imageInfo.widthHeightRatio = variables.imageInfo.width / variables.imageInfo.height;
-
         variables.zoomWindowDimensions.width = elements.container.offsetWidth * settings.zoomWindowWidth;
-        variables.zoomWindowDimensions.height = elements.container.offsetHeight * settings.zoomWindowWidth;
-        variables.zoomWindowDimensions.proportion = variables.zoomWindowDimensions.width / variables.image.width;
+
+        if (settings.zoomWindowDimension === 'natural') {
+            variables.zoomWindowDimensions.height = elements.container.offsetHeight * settings.zoomWindowWidth;
+        } else if (settings.zoomWindowDimension === 'full-height') {
+            variables.zoomWindowDimensions.height = elements.container.offsetHeight - 20;
+        }
+        
+        variables.zoomWindowDimensions.proportion = variables.zoomWindowDimensions.width / variables.imageInfo.width;
 
         elements.zoomContainer.style.width = variables.zoomWindowDimensions.width + 'px';
         elements.zoomContainer.style.height = variables.zoomWindowDimensions.height + 'px';
@@ -139,8 +148,8 @@
 
     initMagnifier = function () {
 
-        variables.magnifierInfo.width = elements.scaledImage.width * variables.zoomWindowDimensions.proportion;
-        variables.magnifierInfo.height = elements.scaledImage.height * variables.zoomWindowDimensions.proportion;
+        variables.magnifierInfo.width = elements.scaledImage.width * (variables.zoomWindowDimensions.width / variables.imageInfo.width);
+        variables.magnifierInfo.height = elements.scaledImage.height * (variables.zoomWindowDimensions.height / variables.imageInfo.height);
 
         elements.magnifier.style.width = variables.magnifierInfo.width + 'px';
         elements.magnifier.style.height = variables.magnifierInfo.height + 'px';

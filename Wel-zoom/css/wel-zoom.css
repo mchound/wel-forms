@@ -8,7 +8,7 @@
 .wel-zoom .magnifier {
   width: 150px;
   height: 75px;
-  background-color: #fff;
+  background-color: #000;
   opacity: 0.4;
   filter: alpha(opacity=40);
   position: absolute;
@@ -20,7 +20,7 @@
   width: 300px;
   height: 150px;
   overflow: hidden;
-  border: 2px solid #666;
+  border: 1px solid #666;
   border-color: rgba(0, 0, 0, 0.6);
   display: none;
   -moz-transition: left 0.3s;
