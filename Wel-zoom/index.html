@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/wel-zoom.min.css" rel="stylesheet" />
+    <link href="css/styles.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="pic1" class="wel-zoom medium-margin-bottom" data-img-src="img/1.jpg"></div>
+    <div id="pic2" class="wel-zoom medium-margin-bottom" data-img-src="img/2.jpg"></div>
+    <div id="pic3" class="wel-zoom medium-margin-bottom" data-img-src="img/3.jpg"></div>
+    <div id="pic4" class="wel-zoom medium-margin-bottom" data-img-src="img/4.jpg"></div>
+
+    <script src="js/wel-zoom.js"></script>
+
+    <script>
+        var
+        pic1 = new wz({ selector: '#pic1', loadingText: 'Laddar bild' }),
+        pic2 = new wz({ selector: '#pic2', loadingText: 'Laddar bild' }),
+        pic3 = new wz({ selector: '#pic3', loadingText: 'Laddar bild' }),
+        pic4 = new wz({ selector: '#pic4', loadingText: 'Laddar bild' });
+    </script>
+
+</body>
+</html>

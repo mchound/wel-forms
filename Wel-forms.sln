@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{C9113660-1FFF-482F-9B38-61750F830F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wel-zoom", "Wel-zoom\Wel-zoom.csproj", "{408826FC-8E68-4124-B3D0-0F648491C85B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C9113660-1FFF-482F-9B38-61750F830F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9113660-1FFF-482F-9B38-61750F830F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9113660-1FFF-482F-9B38-61750F830F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408826FC-8E68-4124-B3D0-0F648491C85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408826FC-8E68-4124-B3D0-0F648491C85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408826FC-8E68-4124-B3D0-0F648491C85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408826FC-8E68-4124-B3D0-0F648491C85B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
