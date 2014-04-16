@@ -63,16 +63,16 @@
     <Content Include="css\styles.min.css">
       <DependentUpon>styles.css</DependentUpon>
     </Content>
-    <Content Include="css\wel-zoom.css">
-      <DependentUpon>wel-zoom.less</DependentUpon>
+    <Content Include="css\wz.css">
+      <DependentUpon>wz.less</DependentUpon>
     </Content>
-    <Content Include="css\wel-zoom.min.css">
-      <DependentUpon>wel-zoom.css</DependentUpon>
+    <Content Include="css\wz.min.css">
+      <DependentUpon>wz.css</DependentUpon>
     </Content>
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\demo-image.jpg" />
     <Content Include="index.html" />
-    <Content Include="js\wel-zoom.js" />
+    <Content Include="js\wz.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\styles.less" />
-    <Content Include="css\wel-zoom.less" />
+    <Content Include="css\wz.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

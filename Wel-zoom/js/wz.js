@@ -5,7 +5,7 @@
     self = this,
 
     defaults = {
-        selector: '.wel-zoom',
+        selector: '.wz',
         zoomWindowWidth: 0.4,
         zoomWindowScale: 1,
         zoomWindowDimension: 'natural',
