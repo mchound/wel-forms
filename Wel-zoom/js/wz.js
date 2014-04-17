@@ -115,7 +115,6 @@
         event(elements.scaledImage, 'mousemove', mousemoveEventHandler, true);
         event(elements.magnifier, 'mousemove', mousemoveInMagnifierEventHandler, true);
         event(elements.container, 'mouseleave', mouseleaveEventHandler, false);
-        //event(elements.fullScaleImage, 'load', initZoomContainer, true);
         event(elements.zoomContainer, 'mouseenter', mouseEnterZoomContainerEventHandler, false);
 
     },
@@ -254,4 +253,4 @@
     };
 
     init(options);
-};
+}

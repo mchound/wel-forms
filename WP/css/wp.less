@@ -1,0 +1,54 @@
+﻿.wp{
+
+    overflow: hidden;
+    border: 1px solid #000;
+    position: relative;
+
+    img{
+        max-width: 100%;
+    }
+
+    &.zoom{
+
+        img{
+            max-width: none;
+            position: relative;
+        }
+    }
+
+    .mousetrap{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: #000;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        
+        &:hover{
+            cursor: zoom-in;
+        } 
+    }
+
+    .tooltip
+    {
+        border: 1px solid #666;
+        position: absolute;
+        display: none;
+
+        .inner{
+            font-family: Arial;
+            background-color: #000;
+            opacity: 0.6;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+
+    &:hover .tooltip{
+        display: inline-block;
+    }
+}

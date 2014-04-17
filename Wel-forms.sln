@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WZ", "Wel-zoom\WZ.csproj", "{408826FC-8E68-4124-B3D0-0F648491C85B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP", "WP\WP.csproj", "{A3663581-AE83-4831-9626-58C1B98FE2A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{408826FC-8E68-4124-B3D0-0F648491C85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{408826FC-8E68-4124-B3D0-0F648491C85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{408826FC-8E68-4124-B3D0-0F648491C85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3663581-AE83-4831-9626-58C1B98FE2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3663581-AE83-4831-9626-58C1B98FE2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3663581-AE83-4831-9626-58C1B98FE2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3663581-AE83-4831-9626-58C1B98FE2A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
