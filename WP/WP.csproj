@@ -70,6 +70,7 @@
       <DependentUpon>wp.css</DependentUpon>
     </Content>
     <Content Include="img\ajax-loader.gif" />
+    <Content Include="img\zoom.png" />
     <Content Include="index.html" />
     <Content Include="js\polyfiller.js" />
     <Content Include="js\wp.js" />
