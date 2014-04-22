@@ -82,6 +82,9 @@
   <ItemGroup>
     <Content Include="css\wp.less" />
     <Content Include="css\styles.less" />
+    <Content Include="css\wp.css.map">
+      <DependentUpon>wp.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

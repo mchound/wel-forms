@@ -1,4 +1,4 @@
-.wp {
+﻿.wp {
   overflow: hidden;
   border: 1px solid #000;
   position: relative;
@@ -29,19 +29,34 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../img/zoom.png) no-repeat center center #000000;
+  display: none;
+}
+.wp .tooltip .cover {
   background-color: #000;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  display: none;
-  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.wp .tooltip .inner {
+.wp .tooltip .content {
+  background: url(../img/zoom.png) no-repeat left center;
+  position: absolute;
   font-size: 18px;
   font-family: Arial;
   color: #fff;
   text-align: center;
   padding: 5px;
+  left: 50%;
+  margin-left: -113px;
+  top: 50%;
+  margin-top: -35px;
+}
+.wp .tooltip .content span {
+  line-height: 60px;
+  padding-left: 60px;
 }
 .wp:hover .tooltip {
   display: inline-block;
